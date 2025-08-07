@@ -1,15 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!-- <MeetGreet name="Bruce" hero-name="Batman"/>
+  <MeetGreet name="Clark"  hero-name="Superman"/>
+  <MeetGreet name="Diana"  hero-name="Wonder Woman"/>
+  <MeetGreet :name="name"  :hero-name="channel"/> -->
+
+  <MeetArtiicle id="my-article" title="Article Title" :likes= "500" :isPublished="true"/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import MeetGreet from './components/Greet.vue'
+import MeetArtiicle from './components/Article.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    // MeetGreet,
+    MeetArtiicle,
+  },
+  data() {
+    return {
+      name:'Dan',
+      channel:"Code"
+    }
   }
 }
 </script>
